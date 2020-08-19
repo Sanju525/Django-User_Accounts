@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+    {% load crispy_forms_tags %}
+    {% block title %}
+        Login
+    {% endblock %}
+    {% block head %}
+        <style>
+            .card-header{
+                background-color: rgba(139, 255, 0, 0.1);
+                border-bottom:1px solid black;
+            }
+            .custom-body{
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+            .card-body{
+                background-color: rgba(  243, 243, 243, 0.5);
+            }
+            .card{
+                border: 2px solid black;
+            }
+            hr{
+                border-bottom: 1px solid black;
+            }
+        </style>
+    {% endblock %}
+    {% block login %}
+        <div class="jumbotron">
+            <h2><center>Login</center></h2>
+            <hr>
+            <form method="POST">
+                {% csrf_token %}
+                {{ form|crispy }}
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <div class="border-top pt-3">
+                <small class="text-muted">
+                    Need an account?<a style="color: green" href="{%url 'register' %}">&nbsp;Sign up</a>
+                </small>&nbsp;
+                <small class="text-muted">
+                    Forgot Password?<a style="color:indigo" href="{%url 'password_reset' %}">&nbsp;reset</a>
+                </small>
+            </div>
+            <hr>
+        </div>
+    {% endblock %}

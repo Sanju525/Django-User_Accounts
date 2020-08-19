@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+    {% block title %}
+        Home
+    {% endblock %}
+    {% block head %}
+        <style>
+            .card-header{
+                background-color: rgba(139, 255, 0, 0.1);
+                border-bottom:1px solid black;
+            }
+            .custom-body{
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+            .card-body{
+                background-color: rgba(  243, 243, 243, 0.5);
+            }
+            .card{
+                border: 2px solid black;
+            }
+            hr{
+                border-bottom: 1px solid black;
+            }
+        </style>
+    {% endblock %}
+    {% block content %}
+        <h1>Welcome to my Website</h1>
+        <p>This webpage was build over Django a python framework.<br>
+            It just deals with <span style="color:blue">user-</span> <span style="color:green">register</span>/
+            <span style="color:violet">login</span>/<span style="color:indigo">reset-password</span> and
+            <span style="color:red">logout</span> functions only. </p>
+    {% endblock %}

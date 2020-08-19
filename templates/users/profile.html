@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+    {% block title %}
+        {{ user.username }}'s-Profile
+    {% endblock %}
+    {% block head %}
+        <style>
+            .card-header{
+                background-color: rgba(139, 255, 0, 0.1);
+                border-bottom:1px solid black;
+            }
+            .custom-body{
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+            .card-body{
+                background-color: rgba(  243, 243, 243, 0.5);
+            }
+            .card{
+                border: 2px solid black;
+            }
+            hr{
+                border-bottom: 1px solid black;
+            }
+        </style>
+    {% endblock %}
+    {% block profile %}
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="..." class="card-img" alt="Profile Pic">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Username: {{user.username}}</h5>
+                <p class="card-text">Email: {{user.email}}</p>
+                <p class="card-text"><small class="text-muted">Extra features & Random Text</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    {% endblock %}
+    {% block content %}
+<!--        <h1>{{ user.username }}</h1>-->
+    {% endblock %}
