@@ -6,18 +6,18 @@ This project is based on `Django` a Python-based free and open-source web framew
 ## How to run on local server?
 The project requires Python 3.6 or 3.7 (The version of Django is specified in requirements.txt).
 I suggest creating a new virtual environment:
-### You can create your vitual environment using conda or pip
+### You can create and activate your vitual environment using conda or pip
 in-case you dont know how to create a virtual environment, follow the below steps:
-
-```conda --name My_Env_Name```
-
-```python -m venv My_Env_Name```
-
->>> activating your virtual environment.
-
-```conda activate My_Env_Name```
-
-```source My_Env_Name/bin/activate```
+>>> using conda
+```
+conda create --name My_Env_Name
+conda activate My_Env_Name
+```
+>>> using python
+```
+python -m venv My_Env_Name
+source My_Env_Name/bin/activate
+```
 
 Activate your virtual environment, then running:
 ```
