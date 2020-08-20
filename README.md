@@ -26,7 +26,7 @@ cd Django-User_Accounts
 pip install -r requirements.txt
 ```
 
-will install all the packages for running the application.
+will download the project and install all the packages for running the application.
 ### Changes in the project
 To run this project in your local machine, we need to do certain changes to our project.
 #### settings.py
