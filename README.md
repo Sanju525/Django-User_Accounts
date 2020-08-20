@@ -37,7 +37,7 @@ In the proect folder **Django-User_Accounts** goto UserAccounts and open `settin
 ```
 copy the string and replace it in the SECRET_KEY variable. After that change the `DEBUG` value to `True` and remove 'myusersapp.herokuapp.com', from ALLOWED_HOSTS set.
 
-### Working with password reset in the project
+#### Working with password reset in the project
 You need to change few more values in the `settings.py` file for resetting the user passwords. Open the `settings.py` file and you will see variables `EMAIL_HOST_USER` and `EMAIL_HOST_PASS`, change those values with your email and **Google app passwords** respectively.
 
 #### Creating tables and super-user for storing data and administrating the application
