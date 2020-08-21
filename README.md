@@ -30,7 +30,7 @@ will download the project and install all the packages for running the applicati
 ### Changes in the project
 To run this project in your local machine, we need to do certain changes to our project.
 #### settings.py
-In the proect folder **Django-User_Accounts** goto UserAccounts and open `settings.py` file in any editor. The first thing you need to change is the `SECRET_KEY` you can replace that with any randomtext or you can copy a random string from python inbuilt package `secrets` simply open python-interpreter and import package by 
+In the proect folder **Django-User_Accounts** goto UserAccounts and open `settings.py` file in any editor. The first thing you need to change is the `SECRET_KEY` you can replace that with any randomtext or you can generate and copy a random string from python inbuilt package `secrets`, simply open python-interpreter and import package by `import secrets` and execute as follows,
 ```
 >>> import secrets
 >>> secrets.token_hex(24)
