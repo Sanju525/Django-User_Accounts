@@ -1,7 +1,7 @@
 # Django-User_Accounts
 This project is based on `Django` a Python-based free and open-source web framework that follows the model-view-controller architectural pattern, dealing with user accounts and register/login & password-reset functionalities.
 
-[Deployed on Heroku](https://myusersapp.herokuapp.com)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://myusersapp.herokuapp.com)
 
 ## How to run on local server?
 The project requires Python 3.6 or 3.7 (The version of Django is specified in requirements.txt).
